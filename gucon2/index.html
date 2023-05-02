@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICCPCT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         @media screen {
 
@@ -511,8 +512,8 @@
 
 <body>
     <div class="header">
-        <header>
-            <logo>
+        <header class="header_container">
+            <logo >
                 <img class="logo" height="35px" class="logo" src="asset/galgotais-logo.png" alt="galgotias-logo">
                 <img class="logo" height="40px" src="asset/logo-ieee.svg" alt="ieee-logo">
                 <img class="logo" height="50px" src="asset/g20-logo.png" alt="g20-logo">
@@ -557,9 +558,8 @@
             </div>
         </header>
         <hr>
-
-
-        <nav>
+        
+        <nav class="nav_links">
             <ul>
                 <li><a href="#about" class="nav-link active">About</a></li>
                 <li><a href="#committees" class="nav-link">Committes</a></li>
@@ -572,6 +572,7 @@
             </ul>
         </nav>
     </div>
+
     <mob-logo>
         <img class="logo" height="35px" class="logo"
             src="https://www.galgotiasuniversity.edu.in/images/galgotais-logo.png" alt="galgotais-logo">
@@ -600,28 +601,83 @@
             conference aims to put together the experts from the relevant areas to disseminate their knowledge and
             experience for the relevant future research scope. There are 10 tracks in the conference covering almost
             all areas related to.<br><br>
-            Conference Tracks:
             <br>
-            Track I. Smart Cities & Technologies for sustainable development<br>
-            Track II. Renewable Energy technologies including hydrogen<br>
-            Track III. Modern Power Electronics, Drives & Control, Electric Vehicles<br>
-            Track IV. Big data, Cloud Computing and Quantum Computing<br>
-            Track V. Smart Manufacturing, Smart Tourism and Industry 5.0<br>
-            Track VI. 5G Applications,Emerging 6G Technologies, E-Commerce<br>
-            Track VII. Robotics, UAV, and Unmanned Vehicle Technologies<br>
-            Track VIII. AI, AIoT, IIoT, Deep Learning, and Machine Learning<br>
-            Track IX. Applications of Wide Bandgap Semiconductors<br>
-            Track X. Cyber Security and Humanitarian Technologies<br>
-            Track XI. Blockchain Applications<br>
-            Track XII. AR,VR and Metaverse<br>
-            Track XIII. Healthcare Applications<br>
-            Track XIV. Human Computer Interface (HCI)<br>
+        </p>
+           <h3 class="conference_title">
+               Conference Tracks:
+           </h3>
+            <div class="">
+                <ul class="tracks_div">
 
-            Special/ Track XI. Financial Technologies<br>
-            Special/ Track XII. Sports Analytics and Technologies<br><br>
-        <h5>Objectives</h5><br>
+                <li  class="track_para">
+
+                    Track I. Smart Cities & Technologies for sustainable development<br>
+                </li>
+                <li class="track_para">
+
+                    Track II. Renewable Energy technologies including hydrogen<br>
+                </li>
+                <li class="track_para">
+
+                    Track III. Modern Power Electronics, Drives & Control, Electric Vehicles<br>
+                </li>
+                <li class="track_para">
+
+                    Track IV. Big data, Cloud Computing and Quantum Computing<br>
+                </li>
+                <li class="track_para">
+
+                    Track V. Smart Manufacturing, Smart Tourism and Industry 5.0<br>
+                </li>
+                <li class="track_para">
+
+                    Track VI. 5G Applications,Emerging 6G Technologies, E-Commerce<br>
+                </li>
+                <li class="track_para">
+
+                    Track VII. Robotics, UAV, and Unmanned Vehicle Technologies<br>
+                </li>
+                <li class="track_para">
+
+                    Track VIII. AI, AIoT, IIoT, Deep Learning, and Machine Learning<br>
+                </li>
+                <li class="track_para">
+
+                    Track IX. Applications of Wide Bandgap Semiconductors<br>
+                </li>
+                <li class="track_para">
+
+                    Track X. Cyber Security and Humanitarian Technologies<br>
+                </li>
+                <li class="track_para">
+
+                    Track XI. Blockchain Applications<br>
+                </li>
+                <li class="track_para">
+
+                    Track XII. AR,VR and Metaverse<br>
+                </li>
+                <li class="track_para">
+
+                    Track XIII. Healthcare Applications<br>
+                </li>
+                <li class="track_para">
+
+                    Track XIV. Human Computer Interface (HCI)<br>
+                </li>
+                <li class="track_para">
+
+                    Special/ Track XI. Financial Technologies
+                </li>
+                <li class="track_para">
+
+                    Special/ Track XII. Sports Analytics and Technologies
+                </li>
+                </ul>
+            </div>
+        <h5 class="objective_title" >Objectives</h5><br>
         <p class="context">The major objectives of the conference series (ICCPCT) are as follows:</p>
-        <ul>
+            <ul class="objective_ul">
             <li class="points">To provide a prestigious international forum for specialist presentations and
                 interactions in one or more areas of Engineering and Technology with in its tracks through papers,
                 exhibitions, plenary talk, tutorials, etc;
@@ -633,7 +689,7 @@
             <li class="points">To polish and boost the interpersonal and professional skills of volunteers with the
                 guidance of leaders and renowned personalities in the respective field of Engineering & Technology.
             </li class="points">
-        </ul>
+            </ul>
         </p>
         <footer>
             <p>
@@ -792,7 +848,6 @@
             <p>Copyright &#169; 2023 ICCPCT</p>
         </footer>
     </div>
-
 
     <script>
         const links = document.querySelectorAll('.nav-link');
