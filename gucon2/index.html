@@ -511,6 +511,8 @@
 </head>
 
 <body>
+    <div style="position:relative;" >
+        
     <div class="header">
         <header class="header_container">
             <logo >
@@ -571,6 +573,10 @@
                 <li><a href="#submission" class="nav-link submission-btn">SUBMISSION</a></li>
             </ul>
         </nav>
+        <div class="header_title_container">
+            <h1 class="iccpct_text">ICCPCT</h1>
+            <p class="iccpct_para">2024 IEEE International Conference on Computing, Power and Communication Technologies (ICCPCT)</p>
+        </div>
     </div>
 
     <mob-logo>
@@ -699,6 +705,7 @@
             <p>Copyright &#169; 2023 ICCPCT</p>
         </footer>
     </div>
+    <div class="arrow_btn" > <img src="/asset/up_arrow.png" /> </div>
 
     <div id="committees" class="section">
         <h3 class="H1">IEEE ICCPCT 2024 ORGANIZING COMMITTEES</h3>
@@ -848,8 +855,28 @@
             <p>Copyright &#169; 2023 ICCPCT</p>
         </footer>
     </div>
+</div>
 
     <script>
+        
+        window.addEventListener('scroll', function() {
+            var arrowBtn = document.querySelector('.arrow_btn');
+            if (window.scrollY >= 500) {
+                arrowBtn.style.display = 'block';
+            } else {
+                arrowBtn.style.display = 'none';
+            }
+        });
+
+        var arrowBtn = document.querySelector('.arrow_btn');
+        arrowBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
         const links = document.querySelectorAll('.nav-link');
         links.forEach(link => {
             link.addEventListener('click', event => {
@@ -905,6 +932,9 @@
         }
     });
 </script>
+
+
+
 
 </body>
 
