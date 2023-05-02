@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+@media screen {
+  .mob-search {
+    display: none;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  mob-logo {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .header {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(51, 51, 51, 0.412) 0,
+        rgba(65, 25, 25, 0.319) 100%
+      ),
+      url("https://www.galgotiasuniversity.edu.in/public/uploads/media/EOv7eGMLRuNVFbo2LzeuQxg79IxvJm3FY2tgFCZW.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 55vh;
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  logo {
+    margin: 10px;
+    display: flex;
+  }
+
+  .logo {
+    margin: 2px 7px;
+  }
+
+  .social-media {
+    display: flex;
+    margin: 1%;
+    align-items: center;
+  }
+
+  .social-media i {
+    font-size: 32px;
+    margin: 7px 16px 7px 0px;
+    cursor: pointer;
+    color: rgb(37, 37, 37);
+  }
+
+  .mob-search {
+    margin: 0 20px 0 5px;
+  }
+
+  .mob-search > div {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 1px #0091c2);
+  }
+
+  .mob-search > div:after {
+    content: "";
+    background: rgb(255, 183, 0);
+    width: 4px;
+    height: 10px;
+    position: absolute;
+    top: 28px;
+    right: -1px;
+    transform: rotate(135deg);
+  }
+
+  .mob-search > div > input {
+    color: black;
+    font-size: 16px;
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    padding: 10px;
+    border: solid 4px rgb(255, 183, 0);
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+  }
+
+  .mob-search > div > input::placeholder {
+    color: #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+  }
+
+  .mob-search > div > input:focus::placeholder {
+    opacity: 1;
+  }
+
+  .mob-search > div > input:focus,
+  .mob-search > div > input:not(:placeholder-shown) {
+    width: 250px;
+  }
+
+  .search {
+    margin: 0 20px 0 5px;
+  }
+
+  .search > div {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 1px #0091c2);
+  }
+
+  .search > div:after {
+    content: "";
+    background: rgb(255, 183, 0);
+    width: 4px;
+    height: 10px;
+    position: absolute;
+    top: 25px;
+    right: -1px;
+    transform: rotate(135deg);
+  }
+
+  .search > div > input {
+    color: black;
+    font-size: 16px;
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    padding: 10px;
+    border: solid 4px rgb(255, 183, 0);
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+  }
+
+  .search > div > input::placeholder {
+    color: #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+  }
+
+  .search > div > input:focus::placeholder {
+    opacity: 1;
+  }
+
+  .search > div > input:focus,
+  .search > div > input:not(:placeholder-shown) {
+    width: 250px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+    display: flex;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(56, 14, 195);
+    font-weight: 500;
+    font-size: 22px;
+    padding: 10px;
+    transition: transform 0.2s;
+  }
+
+  nav ul li a:hover {
+    transform: scale(1.2);
+    color: rgb(59, 59, 59);
+  }
+
+  .submission-btn {
+    background-color: #e4ba10;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin: 0 20px;
+    font-size: 16px;
+  }
+
+  .submission-btn:hover {
+    background-color: #cfe410;
+    color: black;
+    transform: scale(1);
+  }
+
+  .section {
+    display: none;
+    font-size: 35px;
+  }
+
+  #awards {
+    text-align: left;
+  }
+
+  #about {
+    text-align: left;
+  }
+
+  #awards img {
+    margin: 10px 15%;
+  }
+
+  .H1 {
+    text-align: center;
+    color: rgb(194, 38, 113);
+  }
+
+  .active {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .headline {
+    color: rgba(12, 45, 231, 0.973);
+    text-align: center;
+  }
+
+  .context {
+    color: rgb(10, 10, 10);
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+
+  /* .points {
+    color: rgb(91, 4, 253);
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+  } */
+
+  h5 {
+    color: rgba(12, 45, 231, 0.973);
+    font-size: 38px;
+    font-weight: 700;
+    width: 80%;
+    margin: 20px auto 0;
+  }
+
+  .nav-link.active {
+    color: rgb(39, 39, 39);
+  }
+
+  .sub-btn {
+    display: flex;
+    justify-content: center;
+    margin: 3vh;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+
+  form input {
+    width: 400px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  form textarea {
+    width: 400px;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #submission {
+    text-align: left;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .contactus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    margin: 0 10%;
+    text-align: left;
+  }
+
+  footer {
+    background-color: rgb(18, 15, 28);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .scroll-left {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    font-weight: 700;
+    margin: 20px 15%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+
+  .scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 15s linear infinite;
+  }
+
+  /* Move it (define the animation) */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .dropbtn {
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin: 10px;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  mob-logo {
+    display: block;
+  }
+
+  header {
+    display: block;
+  }
+
+  logo {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .mob-search {
+    display: block;
+    margin: 10px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .H1 {
+    text-align: center;
+    color: rgb(194, 38, 113);
+    font-size: 29px;
+  }
+
+  .contactus {
+    flex-direction: column;
+  }
+
+  form input {
+    width: 90%;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  form textarea {
+    width: 90%;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .scroll-left {
+    height: 31px;
+    overflow: hidden;
+    position: relative;
+    font-weight: 600;
+    margin: 20px 5%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+
+  .scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    /* Starting position */
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 15s linear infinite;
+  }
+}
+.tracks_div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 40px;
+}
+
+.track_para {
+  font-size: 18px;
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+.conference_title {
+  padding-left: 150px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.points {
+  color: rgb(91, 4, 253);
+  font-size: 17px;
+  font-weight: 500;
+  text-align: left;
+  width: 80% !important ;
+  margin: 0 auto;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 35px;
+  margin-right: 70px !important;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.objective_title {
+  width: 80%;
+  color: black;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.arrow_btn {
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 30px;
+  bottom: 200px;
+}
+.arrow_btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.header_title_container {
+  text-align: center;
+}
+
+.iccpct_text {
+  font-size: 100px;
+  background-image: url("asset/logo_text.jpeg");
+  background-size: cover;
+  background-position: top;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.iccpct_para{
+  color: white;
+  font-size: 21px;
+  color: white;
+  font-weight: 500;
+}
